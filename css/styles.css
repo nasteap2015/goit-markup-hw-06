@@ -62,9 +62,9 @@ body{
     }
 }
  
-/* Стилі хедера*/
-/* 
+
 .header-container{
+    background-color: #FFF;
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
@@ -171,9 +171,7 @@ body{
 .address-info:focus{
     color: #404BBF;
 }
-*/
 
-/* Стилі першої секції */
 .first-section{
     background-repeat: no-repeat;
     background-image: linear-gradient(
@@ -992,4 +990,92 @@ body{
     .modal-text-area:focus {
         border-color: #4D5AE5;
     }
+}
+
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    z-index: 999;
+    visibility: hidden;
+    pointer-events: none;
+    
+}
+
+.mobile-menu.is-open{
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mebile-menu-content{
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 72px 24px 40px 16px;
+}
+
+.mobile-navigation-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.mobile-navigation-links{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    color: #2E2F42;
+}
+
+.mobile-navigation-links.studio{
+    color: #404BBF;
+}
+
+.mobile-navigation-links:hover,
+.mobile-navigation-links:active
+.mobile-navigation-links:focus{
+    color: #2E2F42;
+}
+
+.mobile-address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.mobile-address-info{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #434455;
+}
+
+.mobile-address-info.tel{
+    color: #4D5AE5;
+}
+
+.links-icon-list-mobile{
+    display: flex;
+    gap: 40px;
+}
+
+.socials-link-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.social-media-container>.links-icon-list {
+    margin: 0;
 }
