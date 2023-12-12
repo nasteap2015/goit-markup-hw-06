@@ -113,12 +113,17 @@ body{
     font-weight: 700;
 }
 
+.mobile-menu-button{
+    border: none;
+    background-color: #ffffff;
+}
+
 .menu-icon{
     stroke:#2F2F37;
 }
 
 @media (min-width: 768px){
-    .mobile-menu-link{
+    .mobile-menu-button{
         display: none;
     }
 
