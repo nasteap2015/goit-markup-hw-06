@@ -962,13 +962,9 @@ body{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    width: 100%;
     display: flex;
     align-items: center;
-    width: 100%;
-}
-
-.checkbox-label-text{
-    width: 100%;
 }
 
 .privacy-link{
@@ -1070,8 +1066,6 @@ body{
     z-index: 999;
     visibility: visible;
     pointer-events: auto;
-    
-    
 }
 
 .mobile-menu.is-hidden{
