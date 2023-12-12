@@ -116,6 +116,7 @@ body{
 .mobile-menu-button{
     border: none;
     background-color: #ffffff;
+    padding: 0;
 }
 
 .menu-icon{
