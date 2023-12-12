@@ -39,6 +39,8 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #434455;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 1.16;
     background-color: #FFFFFF;
     letter-spacing: 0.02em;
 }
@@ -127,7 +129,6 @@ body{
     
     .navigation-links {
         line-height: 1.5;
-        font-size: 16px;
         color: #2E2F42;
         font-weight: 500;
         padding: 25.5px 0;
@@ -166,7 +167,6 @@ body{
         line-height: 1.7;
         font-size: 12px;
         color: #434455;
-        font-weight: 400;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     }
 
@@ -193,7 +193,6 @@ body{
     .address-list {
         flex-direction: row;
         gap: 40px;
-        align-items: center;
     }
 
     .address-info {
@@ -248,7 +247,6 @@ body{
 .first-section-button{
     background-color:#4D5AE5;
     color:#FFFFFF;
-    font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
@@ -373,10 +371,8 @@ body{
 }
 
 .second-section-list-content{
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    color: #434455;
 }
 
 @media (min-width: 768px){
@@ -474,10 +470,7 @@ body{
 }
 
 .third-section-list-content{
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
-    color: #434455;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -841,16 +834,16 @@ body{
     height: 100%;
     background-color: rgba(46, 47, 66, 0.40);
     z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal{
@@ -1075,14 +1068,15 @@ body{
     height: 100%;
     background-color: #FFF;
     z-index: 999;
-    visibility: hidden;
-    pointer-events: none;
+    visibility: visible;
+    pointer-events: auto;
+    
     
 }
 
-.mobile-menu.is-open{
-    visibility: visible;
-    pointer-events: auto;
+.mobile-menu.is-hidden{
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .mebile-menu-content{

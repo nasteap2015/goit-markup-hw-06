@@ -29,7 +29,7 @@
                     <li><a class="address-info" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <a class="mobile-menu-link" href="">
+            <a class="mobile-menu-link" href="" menu-modal-open>
                 <svg class="menu-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
@@ -41,7 +41,7 @@
         <section class="first-section container">
             <div class="first-section-flex">
                 <h1 class="page-title">Effective Solutions for Your Business</h1>
-                <button class="first-section-button" type="button">Order Service</button>
+                <button class="first-section-button" type="button" order-modal-open>Order Service</button>
             </div>
         </section>
           
@@ -437,9 +437,9 @@
     </footer>
 
  
-    <div class="backdrop">
+    <div class="backdrop" order-modal>
         <div class="modal">
-            <button class="close-button" type="button">
+            <button class="close-button" type="button" order-modal-close>
                 <svg class="close-button-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -500,9 +500,9 @@
         </div>
     </div>
     
-    <div class="mobile-menu">
+    <div class="mobile-menu is-hidden" menu-modal>
         <div class="mebile-menu-content">
-            <button class="close-button" type="button">
+            <button class="close-button" type="button" menu-modal-close>
                 <svg class="close-button-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -553,5 +553,6 @@
             
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
