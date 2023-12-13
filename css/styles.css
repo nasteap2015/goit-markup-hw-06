@@ -392,6 +392,10 @@ body{
     .second-section-list {
         width: calc((100% - 48px) / 2);
     }
+
+    .second-section-list-title {
+        text-align: left;
+    }
 }
 
 @media (min-width: 1158px){
@@ -638,9 +642,6 @@ body{
 
 .footer{
     background-color: #2E2F42;
-}
-
-.footer-container{
     padding-top: 97.5px;
     padding-bottom: 96px;
 }
@@ -788,7 +789,7 @@ body{
 }
 
 @media (min-width: 768px){
-    .footer-container{
+    .footer{
         padding-left: 108px;
     }
 
@@ -814,12 +815,14 @@ body{
 }
 
 @media (min-width: 1158px){
-    
-    .footer-container{
-        gap: 0;
-        padding-left: 16px;
+    .footer{
         padding-top: 101.5px;
         padding-bottom: 100px;
+        padding-left: 16px;
+    }
+
+    .footer-container{
+        gap: 0;
     }
 
     .logo-container{
